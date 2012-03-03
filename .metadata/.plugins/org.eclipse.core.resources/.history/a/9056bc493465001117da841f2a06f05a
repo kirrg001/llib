@@ -1,0 +1,5 @@
+function mouseOver(){
+	
+	var myCanvas=document.createElement("canvas");
+	
+}

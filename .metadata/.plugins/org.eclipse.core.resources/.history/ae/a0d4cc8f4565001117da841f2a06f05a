@@ -1,0 +1,32 @@
+	//document.getElementById(window.event.srcElement.id);
+myCanvas = document.createElement('canvas');
+myCanvas.style.backgroundColor = 'red';
+
+function init_text(){
+	
+	var elements = ['flinks', 'ylinks', 'slinks', 'login'];
+	
+	for (var e in elements){
+		var can = document.getElementById(elements[e]);
+		
+		if (can.getContext) {
+    		var ctx = can.getContext('2d');
+
+	    	ctx.fillStyle = 'black';
+    		ctx.font = 'italic 30px sans-serif';
+    		ctx.textBaseline = 'top';
+    		ctx.fillText(elements[e], 2, 5);
+		}	
+	}
+}
+
+function mouseOver(evt){
+	//document.getElementById(window.event.srcElement.id);
+	myCanvas = document.createElement('canvas');
+	document.body.appendChild(myCanvas);
+	myCanvas.style.backgroundColor = 'red';
+		  
+}
+
+
+window.onload = init_text;

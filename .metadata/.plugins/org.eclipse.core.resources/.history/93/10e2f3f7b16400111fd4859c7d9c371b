@@ -1,0 +1,3 @@
+urlpatterns = patterns('',
+    (r'^$', 'ErstesProjekt.main.views.main'),
+)

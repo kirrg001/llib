@@ -1,0 +1,8 @@
+application: my_website
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /.*
+  script: django_appengine/main/main.py

@@ -1,0 +1,34 @@
+function init_text(){
+	
+	var elements = ['flinks', 'ylinks', 'slinks', 'login'];
+	
+	for (var e in elements){
+		var can = document.getElementById(elements[e]);
+		
+		if (can.getContext) {
+    		var ctx = can.getContext('2d');
+
+	    	ctx.fillStyle = 'black';
+    		ctx.font = 'italic 30px sans-serif';
+    		ctx.textBaseline = 'top';
+    		ctx.fillText(elements[e], 2, 5);
+		}	
+	}
+}
+
+function mouseOver(event){
+	var elements = document.getElementsByClassName('can');
+	
+	
+	document.write(elements[0]);
+	var ctx = can.getContext('2d');
+
+	    	ctx.fillStyle = 'black';
+    		ctx.font = 'italic 30px sans-serif';
+    		ctx.textBaseline = 'top';
+    		ctx.fillText(elements[e], 2, 5);
+	
+}
+
+
+window.onload = init_text;

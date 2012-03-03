@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>llib</title>
+		<script type="text/javascript" src="/media/jquery-1.7.1.js"></script>   
+		<script type="text/javascript" src="/media/menu.js"></script>   
+		<link rel="stylesheet" type="text/css" href="/media/style.css"/>
+	</head>
+	<body id="base">
+		<div id="menu">
+			<canvas class="can" id="flinks" onmouseover="mouseOver(event)"></canvas>
+			<canvas class="can" id="slinks" onmouseover="document.bgColor='white'""></canvas>
+			<canvas class="can" id="ylinks" onmouseover="mouseOver(event)"></canvas>
+			<canvas class="can" id="login" onmouseover="mouseOver(event)"></canvas>
+		</div>
+	</body>
+	
+</html>

@@ -1,0 +1,7 @@
+from django.views.generic.simple import direct_to_template
+
+def show_mainpage(request):
+        
+    if request.POST.get("name"):
+        print "rofl"
+    return direct_to_template(request, 'index.html', {'test': request})

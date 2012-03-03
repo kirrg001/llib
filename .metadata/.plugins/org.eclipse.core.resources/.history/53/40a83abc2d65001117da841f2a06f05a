@@ -1,0 +1,37 @@
+.menu{
+	position: relative;
+	height: 150px;
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+
+.can{
+	position: absolute;
+}
+
+
+.flinks{
+	background-color: red;
+	opacity: 50;
+}
+
+
+.slinks{
+	margin-left: 300px;
+	background-color: red;
+	opacity: 100;
+}
+
+
+.ylinks{
+	margin-left: 600px;
+	background-color: red;
+	opacity: 150;
+}
+
+
+.login{
+	background-color: rgba(48,48,178,0.25);
+	opacity: 100;
+}

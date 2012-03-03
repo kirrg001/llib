@@ -1,0 +1,9 @@
+from django.conf.urls.defaults import patterns
+
+urlpatterns = patterns('main.views',
+    (r'^$', 'show_mainpage'),
+    (r'^flinks', 'show_flinks'),
+    (r'^ylinks', 'show_ylinks'),
+    (r'^slinks', 'show_slinks'),
+    (r'^slinks', 'show_playlists'),
+)

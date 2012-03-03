@@ -1,0 +1,6 @@
+body {
+	float: right;
+	color: red;
+    background-color: red;
+}
+       

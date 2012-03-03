@@ -1,0 +1,29 @@
+function init_text(){
+	
+	var elements = ['flinks', 'ylinks', 'slinks', 'login'];
+	
+	for (var e in elements){
+		var can = document.getElementById(elements[e]);
+		
+		if (can.getContext) {
+    		var ctx = can.getContext('2d');
+
+	    	ctx.fillStyle = 'black';
+    		ctx.font = 'italic 30px sans-serif';
+    		ctx.textBaseline = 'top';
+    		ctx.fillText(elements[e], 2, 5);
+		}	
+	}
+}
+
+function mouseOver(evt){
+	//document.getElementById(window.event.srcElement.id);
+	var canv=document.createElement("canvas");
+	canv.id = "canv01";
+	document.body.appendChild(canv);
+	
+	
+}
+
+
+window.onload = init_text;

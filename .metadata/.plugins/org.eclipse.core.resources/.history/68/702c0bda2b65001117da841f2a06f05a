@@ -1,0 +1,8 @@
+.menu{
+	position: relative;
+	background-color: red;
+}
+
+.can{
+	background-color: rgba(48,48,178,0.25);
+}

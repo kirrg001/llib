@@ -1,0 +1,20 @@
+function init_text(){
+	
+	var elements = ['flinks', 'ylinks', 'slinks', 'login'];
+	
+	for (var e in elements){
+		document.write(e);
+		var can = document.getElementById(e);
+		
+		if (can.getContext) {
+    		var ctx = can.getContext('2d');
+
+	    	ctx.fillStyle = '#00f';
+    		ctx.font = 'italic 30px sans-serif';
+    		ctx.textBaseline = 'top';
+    		ctx.fillText("HALLO", 2, 5);
+		}	
+	}
+}
+
+window.onload = init_text;

@@ -1,0 +1,45 @@
+#base{
+	
+}
+
+#menu{
+	position: absolute;
+	float: left;
+	width: 800px;
+	height: 100px;
+	background-color: red;	
+}
+
+#menu .can{
+	height: 100px;
+	position: relative;
+	float: left;
+}
+
+
+#flinks{
+	background-color: red;
+}
+
+
+#slinks{
+	background-color: white;
+}
+
+
+#ylinks{
+	background-color:blue;
+}
+
+
+#playlists{
+	background-color: yellow;
+}
+
+#content{
+	position: absolute;
+	margin-top: 100px;
+	width: 500px;
+	height: 500px;
+	background-color: red;	
+}

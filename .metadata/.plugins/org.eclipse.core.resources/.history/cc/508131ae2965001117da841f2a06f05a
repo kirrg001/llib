@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>llib</title>
+		<script type="text/javascript" src="/media/menu.js"></script>   
+		<link rel="stylesheet" type="text/css" href="/media/style.css"/>
+	</head>
+	<body>
+		<canvas id="login"></canvas>
+		<canvas id="flinks"></canvas>
+		<canvas id="ylinks"></canvas>
+		<canvas id="slinks"></canvas>
+		<h1>HALLO TEST</h1>
+	</body>
+	
+</html>

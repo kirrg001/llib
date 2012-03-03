@@ -1,0 +1,37 @@
+function init_text(){
+	
+	var elements = ['flinks', 'ylinks', 'slinks', 'login'];
+	
+	for (var e in elements){
+		var can = document.getElementById(e);
+		
+		if (can.getContext) {
+    		var ctx = can.getContext('2d');
+
+	    	ctx.fillStyle = '#00f';
+    		ctx.font = 'italic 30px sans-serif';
+    		ctx.textBaseline = 'top';
+    		ctx.fillText('flinks', 2, 5);
+
+		}	
+	}
+		
+
+	
+	var canvas0 = 
+	var canvas1 = document.getElementById('ylinks');
+	var canvas2 = document.getElementById('llinks');
+	var canvas3 = document.getElementById('slinks');
+
+  	if (canvas0.getContext) {
+    	var ctx = canvas0.getContext('2d');
+
+	    ctx.fillStyle = '#00f';
+    	ctx.font = 'italic 30px sans-serif';
+    	ctx.textBaseline = 'top';
+    	ctx.fillText('flinks', 2, 5);
+
+	}	
+}
+
+window.onload = init_text;

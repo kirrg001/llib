@@ -1,0 +1,12 @@
+from django.conf.urls.defaults import patterns
+from django.conf import settings
+
+urlpatterns = patterns('',
+    ('^$', 'django.views.generic.simple.direct_to_template',
+     (r'^site_media/(?P.*)$', 'django.views.static.serve', {'document_root': '/home/sofeng/src/django/myblogsite/media'}),
+     {'template': 'index.html'}),
+                       
+                       
+)
+
+(r'(?:.*?/)?(?P(css|jquery|jscripts|images)/.+)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT }),

@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <link type="text/css" href="/meine_seite/css/stylesheet.css"/>
+        
+        
+    </head>
+    <body onmousedown="return false;">
+        <div id="container">
+        </div>
+        <h1>HALLo</h1>
+    </body>
+</html>

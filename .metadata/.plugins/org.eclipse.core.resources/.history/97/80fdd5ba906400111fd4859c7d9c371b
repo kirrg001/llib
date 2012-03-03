@@ -1,0 +1,9 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/meine_seite/css/stylesheet.css" type="text/css"/>
+    	<title>HTML 5 + Django</title>
+    </head>
+    <body>
+        <h1>HALLo</h1>
+    </body>
+</html>

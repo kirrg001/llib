@@ -1,0 +1,12 @@
+from django.views.generic.simple import direct_to_template
+from main.model import FLinks
+
+def show_mainpage(request):
+    
+    if request['ID_SRC']:
+        id_ = request['ID_SRC']
+    
+    return direct_to_template(request, 'index.html' ,{'test': id});
+
+def show_flinks(request):
+    ''

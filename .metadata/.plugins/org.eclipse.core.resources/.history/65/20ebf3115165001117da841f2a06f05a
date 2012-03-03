@@ -1,0 +1,8 @@
+class FLinks(object):
+    def __init__(self):
+        self.test = 'a';
+        
+        
+class SLinks(object):
+    def __init__(self):
+        self.test = 'a';

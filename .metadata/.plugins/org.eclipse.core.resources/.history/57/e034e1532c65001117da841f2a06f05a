@@ -1,0 +1,11 @@
+.menu{
+	position: relative;
+	background-color: #ffe;
+}
+
+.can{
+	position: relative;
+	margin-left: 10px;
+	background-color: rgba(48,48,178,0.25);
+	opacity: 100;
+}

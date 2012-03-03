@@ -1,0 +1,34 @@
+#base{
+	background-color: black;
+}
+
+#menu{
+	float: left;
+	height: 200px;
+	background-color: red;	
+}
+
+#menu .can{
+	position: relative;
+	float: left;
+}
+
+
+#flinks{
+	background-color: white;
+}
+
+
+#slinks{
+	background-color: blue;
+}
+
+
+#ylinks{
+	background-color:white;
+}
+
+
+#login{
+	background-color: blue;
+}

@@ -1,0 +1,14 @@
+from django.views.generic.simple import direct_to_template
+from main.model import FLinks
+
+def show_mainpage(request):
+    
+    rofl = 'bla'
+    
+    
+    
+    
+    return direct_to_template(request, 'index.html' ,{'test': rofl});
+
+def show_flinks(request):
+    ''

@@ -1,0 +1,10 @@
+from django.views.generic.simple import direct_to_template
+
+def show_mainpage(request):
+    return direct_to_template(request, 'index.html', {'test': request})
+
+def show_flinks(request):
+    print "rofl"
+    
+def show_ylinks(request):
+    print "rofl1"

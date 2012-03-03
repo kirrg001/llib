@@ -1,0 +1,6 @@
+$(window).load(function(){
+		
+		
+		$(".can").fadeIn(500);
+		
+});

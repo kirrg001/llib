@@ -1,0 +1,10 @@
+from django.views.generic.simple import direct_to_template
+   django.middleware.csrf.CsrfViewMiddleware
+   django.middleware.csrf.CsrfResponseMiddleware
+
+
+def show_mainpage(request):
+        
+    if request.GET.get('name'):
+        print "rofl"
+    return direct_to_template(request, 'index.html', {'test': request})

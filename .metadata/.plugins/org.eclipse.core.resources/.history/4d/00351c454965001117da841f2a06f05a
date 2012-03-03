@@ -1,0 +1,28 @@
+//document.getElementById(window.event.srcElement.id);
+
+function init_text(){
+	
+	var elements = ['flinks', 'ylinks', 'slinks', 'playlists'];
+	
+	for (var e in elements){
+		var can = document.getElementById(elements[e]);
+		
+		if (can.getContext) {
+    		var ctx = can.getContext('2d');
+
+	    	ctx.fillStyle = 'black';
+    		ctx.font = 'italic 30px sans-serif';
+    		ctx.textBaseline = 'top';
+    		ctx.fillText(elements[e], 2, 5);
+		}	
+	}
+}
+
+function mouseDown(evt){
+	var src = document.getElementById(window.event.srcElement.id);
+	var cont = document.getElementById('content');
+	var t = cont.getElementsByClassName('rofl');
+	cont.style.backgroundColor = src.style.backgroundColor;
+}
+
+window.onload = init_text;

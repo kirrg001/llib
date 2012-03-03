@@ -1,0 +1,16 @@
+function mouseOver(){
+	
+	
+	var canvas = document.getElementById('cav1');
+
+  	if (canvas.getContext) {
+    	var ctx = canvas.getContext('2d');
+
+    
+	    ctx.fillStyle = '#00f';
+    	ctx.font = 'italic 30px sans-serif';
+    	ctx.textBaseline = 'top';
+    	ctx.fillText('Hy everyone', 2, 5);
+
+	}	
+}

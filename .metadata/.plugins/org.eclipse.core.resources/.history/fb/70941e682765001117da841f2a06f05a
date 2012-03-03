@@ -1,0 +1,3 @@
+
+def show_mainpage(request):
+    return direct_to_template(request, "index.html")

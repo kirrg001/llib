@@ -1,0 +1,30 @@
+try:
+    has_djangoappengine = True
+except ImportError:
+    has_djangoappengine = False
+    DEBUG = True
+    TEMPLATE_DEBUG = DEBUG
+
+import os
+
+SECRET_KEY = '=r-$b*8hglm+858&9t043hlm6-&6-3d3vfc4((7yd0dbrakhvi'
+
+INSTALLED_APPS = (
+    'djangotoolbox',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+)
+
+if has_djangoappengine:
+    INSTALLED_APPS = ('djangoappengine',) + INSTALLED_APPS
+
+SETTINGS_DIR = os.path.dirname(os.path.realpath(__file__))
+BUILDOUT_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, '..'))
+ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), 'templates'),)
+STATIC_ROOT = os.path.join(BUILDOUT_DIR, 'var', 'static')
+STATIC_URL = '/static/'
+
+ROOT_URLCONF = 'urls'

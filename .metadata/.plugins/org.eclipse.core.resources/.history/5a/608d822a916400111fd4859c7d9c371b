@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link 
+        	rel="stylesheet" 
+        	href="../css/stylesheet.css"
+        	text/css"/>
+        	
+    	<title>HTML 5 + Django</title>
+    </head>
+    <body>
+        <h1 style="color: red">HALLo</h1>
+        <p>HAHoidhw3 idhio3 dhiow</p>
+    </body>
+</html>

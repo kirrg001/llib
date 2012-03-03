@@ -1,0 +1,16 @@
+from django.views.generic.simple import direct_to_template
+from main.model import FLinks
+
+i = 0
+
+def show_mainpage(request):
+    
+    if(i == 1)
+        print request
+        
+    i++
+    
+    return direct_to_template(request, 'index.html');
+
+def show_flinks(request):
+    ''

@@ -1,0 +1,9 @@
+from django.conf.urls.defaults import patterns
+
+
+urlpatterns = patterns('',
+    ('^$', 'django.views.generic.simple.direct_to_template',
+     {'template': 'index.html'}),
+)
+
+(r'(?:.*?/)?(?P(css|jquery|jscripts|images)/.+)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT }),

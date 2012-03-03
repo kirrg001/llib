@@ -1,0 +1,38 @@
+#base{
+	background-color: black;
+}
+
+#menu{
+	position: relative;
+	height: 150px;
+	margin-left: 100px;
+	margin-right: 250px;
+	background-color: red;	
+}
+
+#menu .can{
+	position: relative;
+}
+
+
+#flinks{
+	background-color: white;
+}
+
+
+#slinks{
+	margin-left: 300px;
+	background-color: blue;
+}
+
+
+#ylinks{
+	margin-left: 600px;
+	background-color:white;
+}
+
+
+#login{
+	margin-left:
+	background-color: blue;
+}

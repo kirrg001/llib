@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+    <head>
+        <link type="text/css" href="/meine_seite/css/stylesheet.css"/>
+        	
+    	<title>HTML 5 + Django</title>
+    </head>
+    <body>
+        <h1>HALLo</h1>
+        <p>HAHoidhw3 idhio3 dhiow</p>
+    </body>
+</html>

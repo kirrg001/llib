@@ -1,0 +1,6 @@
+$(window).load(function(){
+		
+		
+		$(".can flinks").fadeIn(500);
+		
+});

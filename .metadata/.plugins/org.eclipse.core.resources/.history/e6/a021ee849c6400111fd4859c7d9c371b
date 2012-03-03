@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	
+    	<meta charset="utf-8"/>
+    	
+		<link href="{{ STATIC_URL }}css/stylesheet.css" rel="stylesheet" type="text/css" media="all"/>		
+    	<title>HTML 5 + Django</title>
+    </head>
+    
+    <body>
+    	{{ STATIC_ROOT }}
+		<h1>HALLo</h1>
+   	 	<p>HAHoidhw3 idhio3 dhiow</p>
+    </body>
+    
+</html>

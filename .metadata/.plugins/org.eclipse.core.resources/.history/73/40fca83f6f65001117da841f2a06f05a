@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>llib</title>
+		<script type="text/javascript" src="/media/jquery-1.7.1.js"></script>   
+		<script type="text/javascript" src="/media/menu.js"></script>   
+		<link rel="stylesheet" type="text/css" href="/media/style.css"/>
+	</head>
+	<body id="base">
+		<div id="menu">
+			<a href="" method="get" name="HALLO">ROFL</a>
+			<canvas class="can" id="flinks" onmousedown="mouseDown(event)"></canvas>
+			<canvas class="can" id="slinks" onmousedown="mouseDown(event)"></canvas>
+			<canvas class="can" id="ylinks" onmousedown="mouseDown(event)"></canvas>
+			<canvas class="can" id="playlists" onmousedown="mouseDown(event)"></canvas>
+		</div>
+		
+		<div id="content">
+			{% block content %} 
+			
+			{% endblock %}
+		</div>
+	</body>
+</html>

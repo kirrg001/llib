@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+	<b> {{ request.META.get('ID_SRC') }} </b>
+
+{% endblock %}
+
+
