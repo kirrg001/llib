@@ -1,7 +1,12 @@
-from django.conf.urls.defaults import include, patterns
+from django.conf.urls.defaults import patterns, url
+from views import *
 
-urlpatterns = patterns('',
-    (r'^$', 'django.views.generic.simple.redirect_to', {'url': '/main/', }),
-    (r'^main/', include('main.urls')),
-    (r'^flinks/', include('flinks.urls')),
+urlpatterns = patterns('',                   
+    url(r'^start$', index, name = 'index'),
+    
+    url(r'flinks', set_flinks, name = 'flinks'),
+    url(r'ylinks', set_ylinks, name = 'ylinks'),
+    url(r'slinks', set_slinks, name = 'slinks'),
+    url(r'playlists', set_playlists, name = 'playlists'),
+    url(r'^y_login$', y_login, name = 'y_login'),
 )

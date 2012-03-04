@@ -1,6 +1,15 @@
 //document.getElementById(window.event.srcElement.id);
 
-function init_text(){
+function init(){
+	
+	$.ajaxSetup ({
+		cache: false,
+	});
+	
+	$('#flinks').bind('click', mouseDown);
+	$('#ylinks').bind('click', mouseDown);
+	$('#slinks').bind('click', mouseDown);
+	$('#playlists').bind('click', mouseDown);
 	
 	var elements = document.body.getElementsByClassName('can');
 	
@@ -13,16 +22,13 @@ function init_text(){
 	    	ctx.fillStyle = 'black';
     		ctx.font = 'italic 30px sans-serif';
     		ctx.textBaseline = 'top';
-    		ctx.fillText(elements[e].id, 50, 50);
+    		ctx.fillText(elements[e].id, 80, 50);
 		}	
 	}
 }
 
 
-
-function mouseDown(){
-
-	var src = document.getElementById(window.event.srcElement.id);
+function div_animation(src){
 	var cont = document.getElementById('content');
 
 	//reset content container
@@ -37,10 +43,27 @@ function mouseDown(){
 	else if(src.id == 'slinks') 
 		cont.style.backgroundColor = 'white';
 		
-
 	$( "#content" ).animate( { width: "90%"}, { queue: false, duration: 1500 });
-
 }
 
 
-window.onload = init_text;
+function mouseDown(){
+	
+	var src = document.getElementById(window.event.srcElement.id);
+	url = "{% url " + src.id + "}"
+	
+ 	$.ajax({
+            type: "GET",
+            url: url,
+            async: false,
+            dataType: 'json',
+            success: function(data){
+                el = $('#content');
+                $("#content").html(data.html);
+            }
+        });
+	
+	div_animation(src);	
+}
+
+window.onload = init;
