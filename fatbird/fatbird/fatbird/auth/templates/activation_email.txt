@@ -1,0 +1,4 @@
+{{ site_url }}/auth/{{ activation_key }}
+
+Days: {{ expiration_days }}
+

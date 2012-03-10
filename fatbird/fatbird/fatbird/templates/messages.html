@@ -1,0 +1,9 @@
+{% for message in messages %}
+    <script type="text/javascript">
+       $.gritter.add({
+            title: 'INFORMATION',
+            text: "{{ message }}", 
+            time: 6000,
+       });
+    </script>
+{% endfor %}

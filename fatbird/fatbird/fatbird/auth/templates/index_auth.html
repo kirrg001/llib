@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    {% include 'header.html' %}
+    <body>
+        <div id="registration_div">
+            <form method="POST" action="register">
+                {% csrf_token %}
+                    {{ form }}
+                <input type="submit" name="register" value="register"/>
+            </form>
+        </div>
+        
+        <div id="login_div">
+            <form method="POST" action="login" id="login_form" >
+                {% csrf_token %}
+                <input type="text" name="username"/>
+                <input type="password" name="password"/>
+                <input type="submit" name="login_button" value="login"/>
+            </form>
+        </div>
+    </body>
+    {% include 'messages.html' %}
+</html>
